@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width ,intial-scale=1.0">
+  <title>Responsive and Interactive Course Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: beige;
+    }
+    h1,h2,p{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>COURSES</h1>
+  <p>There are various sections that containes about different cousres.</p>
+  <div class="dropdown">
+    <h3>You can select language below<h3>
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Languages
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li onclick="toggleLanguage('English')"><a href="#">English</a></li>
+        <li onclick="toggleLanguage('Chinese')"><a href="#">Chinese</a></li>
+      </ul> 
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70"aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    <span class="sr-only">70% Complete</span>
+</div>
+</div>
+<div>
+  <h2>Section1</h2>
+  <p>This section tells about HTML.</p>
+  <p>HTML stands for Hyper Text Markup Language
+    HTML is the standard markup language for creating Web pages
+    HTML describes the structure of a Web page
+    HTML consists of a series of elements
+    HTML elements tell the browser how to display the content
+    HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
+</div>
+<div>
+  <h2>Section2</h2>
+  <p>This section tells about bootstrap.</p>
+  <p>Bootstrap is a free front-end framework for faster and easier web development
+    Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+    Bootstrap also gives you the ability to easily create responsive designs</p>
+</div>
+<div style="text-align: center;" class="col-md-8">
+  <div class="embed-responsive embed-responsive-16by9 mb-3">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  
+
+  </div>
+</div>
+</body>
+</html>
